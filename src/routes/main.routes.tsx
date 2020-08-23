@@ -11,10 +11,9 @@ export type RoutesParamList
     Detail: DetailParams;
 };
 
-const Stack = createStackNavigator<RoutesParamList
->();
+const Stack = createStackNavigator<RoutesParamList>();
 
-const Routes: React.FC = () => {
+const MainRoutes: React.FC = () => {
     return (        
         <Stack.Navigator initialRouteName="Home" screenOptions={ {headerShown: false} }>
             <Stack.Screen name="Home" component={Home}/>
@@ -23,4 +22,4 @@ const Routes: React.FC = () => {
     );
 };
 
-export default Routes;
+export default MainRoutes;

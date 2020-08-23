@@ -3,9 +3,9 @@ import { View, Text } from 'react-native';
 import api from '../../api/tmdb';
 import { RoutesParamList } from '../../routes/main.routes';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { Container, InfoContainer, SerieImage, SerieTitle, SerieDescription, YearText,  NumbersText, InfoStyle, InfoTitle, TitleContainer } from './styles'
+import { Container, InfoContainer, SerieImage, SerieTitle, SerieDescription, YearText,  NumbersText, InfoStyle, InfoTitle } from './styles';
 import { ScrollView } from 'react-native-gesture-handler';
-import moment from 'moment'
+import moment from 'moment';
 
 type DetailNavigationProps = StackNavigationProp<RoutesParamList, 'Detail'>;
 
