@@ -15,8 +15,17 @@ const Stack = createStackNavigator<RoutesParamList>();
 
 const MainRoutes: React.FC = () => {
     return (        
-        <Stack.Navigator initialRouteName="Home" screenOptions={ {headerShown: false} }>
-            <Stack.Screen name="Home" component={Home}/>
+        <Stack.Navigator 
+            initialRouteName="Home" 
+            screenOptions={ {headerShown: true, headerStyle: {
+                backgroundColor: '#363649',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },}             
+        }>
+            <Stack.Screen name="Home" component={Home} options={{ title: 'Series' }}/>
             <Stack.Screen name="Detail" component={Detail}/>
         </Stack.Navigator>        
     );
